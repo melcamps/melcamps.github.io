@@ -322,3 +322,79 @@ footer {
 .professional-contributions-link:hover {
     color: #0073b1; /* Change color on hover */
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px; /* Adjust header size */
+    }
+
+    .smash-icon {
+        width: 25px; /* Adjust icon size for smaller screens */
+        margin-left: 5px; /* Reduce margin */
+    }
+
+    .content {
+        width: 90%; /* Make content container more narrow on mobile */
+        padding-top: 20px; /* Reduce padding */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack profile picture and text */
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 200px; /* Smaller profile picture */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 15px; /* Add some margin below */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skill items */
+        align-items: center; /* Center align items */
+    }
+
+    .skill-item {
+        width: 100%; /* Full width on mobile */
+        max-width: 300px; /* Limit width */
+        margin: 5px 0; /* Add some margin between skills */
+    }
+
+    .stash-container {
+        margin: 20px 0; /* Reduce margins */
+    }
+
+    .image-container {
+        flex-direction: column; /* Stack image items vertically */
+        align-items: center; /* Center align images */
+    }
+
+    .image-item {
+        width: 100%; /* Full width */
+        max-width: 300px; /* Limit maximum width */
+    }
+
+    .sidebar {
+        width: 90%; /* Make sidebar width responsive */
+        position: static; /* Remove fixed positioning */
+        margin: 20px auto; /* Center the sidebar */
+        box-shadow: none; /* Remove shadow for mobile */
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .text h3 {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    .text p {
+        font-size: 16px; /* Adjust paragraph size */
+    }
+}
