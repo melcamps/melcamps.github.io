@@ -1,0 +1,324 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.smash-icon {
+    width: 35px; /* Adjust size as needed */
+    height: auto;
+    margin-left: 10px;
+    opacity: 0.8; /* Slightly blend the icon into the header */
+    filter: grayscale(100%); /* Darkens the icon to match the theme */
+    vertical-align: middle; /* Align it with the text */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.smash-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0073b1; /* LinkedIn blue for hover */
+}
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.about-container {
+    max-width: 800px; /* Limit width for better readability */
+    padding: 15px; /* Add padding for spacing */
+}
+
+.about-info {
+    text-align: center;
+}
+
+.about-info h2 {
+    font-size: 26px; /* Smaller heading size */
+    margin-bottom: 15px;
+}
+
+.about-info p {
+    font-size: 16px; /* Reduced font size for paragraphs */
+    line-height: 1.5; /* Improved line spacing */
+    color: #555; /* Darker gray for better readability */
+    text-shadow: 0.5px 0.5px 0.5px rgba(255, 255, 255, 0.5); /* Slight shadow for contrast */
+}
+
+
+.profile-pic {
+    width: 350px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 50%;
+    filter: brightness(0.8); /* Reduce brightness for modern feel */
+    margin-right: 20px;
+}
+
+.stash-container {
+    display: flex;                 
+    flex-direction: column;       
+    align-items: center;          
+    justify-content: center;      
+    margin: 40px 0;              
+}
+
+.stash-pic {
+    height: auto;
+    width: auto;
+    filter: brightness(0.8); /* Reduce brightness for modern feel */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exp {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.image-item {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 20px;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.4s ease;
+}
+
+.image-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    border-radius: 15px;
+    transition: opacity 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.image-item:hover .overlay {
+    opacity: 1;
+}
+
+.text h3 {
+    margin: 0;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.text p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.text a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.text a:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.sidebar {
+    position: fixed;
+    right: 10px;
+    top: 50px;
+    width: 180px;
+    background-color: #f7f7f7;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #0073b1;
+}
+
+/* Styles for the Skills Section */
+#skills {
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between skills */
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333; /* Icon color */
+}
+
+.skill-item span {
+    font-size: 18px;
+}
+
+.themed-image {
+    width: 100%; /* Ensure it scales with its container */
+    height: auto;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Consistent shadow */
+    filter: brightness(0.9); /* Slightly adjust brightness for a modern feel */
+    transition: transform 0.4s ease; /* Smooth hover effect */
+}
+
+.image-item:hover .themed-image {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.professional-contributions-link {
+    text-align: center;
+    display: block; /* Make it a block element for better spacing */
+    margin-bottom: 20px; /* Space below the link */
+    font-size: 20px; /* Adjust font size as needed */
+    color: #333; /* Match text color */
+    text-decoration: underline; /* Underline for emphasis */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.professional-contributions-link:hover {
+    color: #0073b1; /* Change color on hover */
+}
